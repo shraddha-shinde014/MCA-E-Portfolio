@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f5fb;
+    color: #252344;
+}
+
+/* Navigation */
+header {
+    background: #24145c;
+    color: white;
+    padding: 20px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo h2 {
+    font-size: 23px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 13px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background: #6244b5;
+}
+
+/* Home */
+.hero {
+    min-height: 350px;
+    background: linear-gradient(120deg, #24145c, #7054c8);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-content h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero-content h2 {
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.main-btn {
+    display: inline-block;
+    background: white;
+    color: #24145c;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+/* Dashboard */
+.dashboard {
+    padding: 45px 30px;
+    text-align: center;
+}
+
+.dashboard h2 {
+    margin-bottom: 25px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #00000012;
+    border-bottom: 4px solid #7054c8;
+}
+
+.card h3 {
+    color: #51339d;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #666;
+}
+
+/* Content Sections */
+.content-section {
+    padding: 45px 30px;
+    margin: 20px auto;
+    max-width: 1100px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #00000010;
+}
+
+.content-section h2 {
+    color: #372174;
+    margin-bottom: 15px;
+}
+
+.content-section > p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* Upload Box */
+.upload-box {
+    background: #f4f1ff;
+    padding: 25px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+input[type="file"],
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: white;
+    max-width: 100%;
+}
+
+button {
+    background: #51339d;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #24145c;
+}
+
+/* Uploaded Files */
+.file-list {
+    margin-top: 20px;
+}
+
+.file-item {
+    background: #f7f6fc;
+    border: 1px solid #e5e0f3;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.file-item a {
+    color: #51339d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.file-item a:hover {
+    text-decoration: underline;
+}
+
+/* Learning */
+.learning-box {
+    background: #f4f1ff;
+    padding: 25px;
+    border-radius: 10px;
+    line-height: 1.8;
+}
+
+.learning-box h3 {
+    color: #51339d;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.learning-box ul {
+    padding-left: 25px;
+}
+
+/* Footer */
+footer {
+    background: #24145c;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    line-height: 1.8;
+}
+
+/* Mobile Responsive */
+@media (max-width: 750px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .content-section {
+        margin: 15px;
+        padding: 25px 18px;
+    }
+}
+
+.student-info {
+    background: white;
+    color: #252344;
+    max-width: 450px;
+    margin: 25px auto 0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    line-height: 2;
+}
+
+.student-info h3 {
+    color: #51339d;
+    margin-bottom: 10px;
+}
+
+
+.uploaded-heading {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #372174;
+}
+
+#reportList .file-item {
+    border-left: 4px solid #7054c8;
+}

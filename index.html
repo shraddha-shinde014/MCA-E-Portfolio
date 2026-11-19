@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCA Web Development E-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">
+            <h2>MCA E-Portfolio</h2>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#reports">Technical Reports</a>
+            <a href="#projects">Projects</a>
+            <a href="#practicals">Practicals</a>
+            <a href="#learning">Learning</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My E-Portfolio</h1>
+            <h2>MCA Web Development</h2>
+        <div class="student-info">
+            <h3>Student Information</h3>
+            <p><strong>Name:</strong> Shraddha Shinde</p>
+            <p><strong>Course:</strong> MCA Semester I</p>
+            <p><strong>Subject:</strong> Client-Side Web Technology</p>
+            <p><strong>Academic Year:</strong> 2026-2027</p>
+        </div>
+        </div>
+    </section>
+
+    <!-- Dashboard -->
+    <section class="dashboard">
+        <h2>My Academic Portfolio</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Technical Reports</h3>
+                <p>Upload and manage reports</p>
+            </div>
+
+            <div class="card">
+                <h3>Projects</h3>
+                <p>Showcase academic projects</p>
+            </div>
+
+            <div class="card">
+                <h3>Practicals</h3>
+                <p>Upload coding practicals</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Reports Section -->
+        <section id="reports" class="content-section">
+
+        <h2>Technical Reports</h2>
+
+        <p>Upload and manage your academic technical reports.</p>
+
+        <div class="upload-box">
+
+        <input
+            type="text"
+            id="reportTitle"
+            placeholder="Enter Report Title">
+
+        <input
+            type="text"
+            id="reportSubject"
+            placeholder="Enter Subject / Topic">
+
+        <input
+            type="file"
+            id="reportFile"
+            accept=".pdf,.doc,.docx">
+
+        <button onclick="uploadReport()">
+            Upload Report
+        </button>
+
+    </div>
+
+    <h3 class="uploaded-heading">Uploaded Reports</h3>
+
+    <div id="reportList" class="file-list">
+
+    <div class="file-item">
+        <span>Student Academic Technical Report</span>
+
+        <a href="uploads/Technical-Report.pdf"
+            target="_blank">
+            View / Download
+        </a>
+    </div>
+
+</div>
+
+</section>
+
+<!-- Projects -->
+    <section id="projects" class="content-section">
+        <h2>My Projects</h2>
+        <p>Upload your MCA academic projects here.</p>
+
+        <div class="upload-box">
+            <input type="file" id="projectFile">
+            <button onclick="uploadFile('projectFile', 'projectList')">
+                Upload Project
+            </button>
+        </div>
+
+        <div id="projectList" class="file-list"></div>
+
+        <div class="file-item">
+            <span>College Idea Innovation Hub</span>
+            <a href="uploads/College-Idea-Innovation-Hubb.zip"
+            download>
+            View / Download
+        </a>
+
+    </div>
+
+    </section>
+
+    <!-- Practicals -->
+    <section id="practicals" class="content-section">
+        <h2>Web Development Practicals</h2>
+        <p>Upload all your completed practical files here.</p>
+
+        <div class="upload-box">
+            <input type="text" id="practicalName"
+                placeholder="Enter Practical Name">
+
+            <input type="file" id="practicalFile">
+
+            <button onclick="uploadPractical()">
+                Upload Practical
+            </button>
+        </div>
+
+        <div id="practicalList" class="file-list"></div>
+    </section>
+
+    <!-- Learning -->
+    <section id="learning" class="content-section">
+        <h2>Learning & Reflection</h2>
+
+        <div class="learning-box">
+            <h3>My Learning Journey</h3>
+
+            <p>
+                During my MCA Web Development course,
+                I am learning HTML, CSS and JavaScript.
+                I am developing my coding skills and
+                understanding website development.
+            </p>
+
+            <h3>Skills Developed</h3>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Web Designing</li>
+                <li>Problem Solving</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>MCA Web Development E-Portfolio</p>
+        <p>Academic Year 2026-2027</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
